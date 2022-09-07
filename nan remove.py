@@ -41,8 +41,6 @@ for i, filename in  enumerate(files):
       df= df.replace('NaT', '0')
 #Replacing Not Applicable label with 0
       df= df.replace('NotApplicable', '0')
-      ##df1=df.iloc[10:20, 10:13]
-      ##print(df1)
 #Removing NaN values from columns
       df = df.dropna(axis="columns", how="any")
       ##print(df)
